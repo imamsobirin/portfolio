@@ -85,7 +85,7 @@ h3 {
 }
 /* header */
 #home {
-  height: 95vh;
+  min-height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,6 +148,39 @@ h3 {
 .curriculum-vitae i {
   margin-left: 10px;
 }
+@media (max-width: 675px) {
+  .link-btn {
+    font-size: 14px;
+    padding: 5px 0;
+    width: 120px;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .header-display-name {
+    width: 100%;
+  }
+  .cta-button {
+    justify-content: space-evenly;
+  }
+  .home-row1 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-name {
+    font-size: 1rem;
+  }
+  .header-frontend {
+    font-size: 1.5rem;
+  }
+  .home-row2 {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .home-row2 > div {
+    width: 100%;
+  }
+}
 /* about me */
 .home-row2 {
   display: flex;
@@ -157,6 +190,7 @@ h3 {
 .home-row2 > div {
   border-left: 4px solid var(--dark);
   padding-left: 10px;
+  text-align: justify;
 }
 .about-me-description {
   width: 60%;
@@ -178,7 +212,7 @@ h3 {
   z-index: -1;
 }
 .profile-title {
-  z-index: -1;
+  z-index: -10;
 }
 /* projects */
 .project-title {
@@ -245,6 +279,23 @@ h3 {
 .frontend-mentor-btn {
   width: 80%;
   margin: 0 auto;
+}
+@media (max-width: 675px) {
+  .project-card {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    background-size: cover;
+  }
+  .card-title h2 {
+    font-size: 1rem;
+  }
+  .project-title {
+    left: -5%;
+    top: -40px;
+    transform: none;
+  }
 }
 /* contact */
 .contact-title {
@@ -325,6 +376,23 @@ h3 {
   background-color: var(--yellow);
   color: var(--dark);
 }
+@media (max-width: 675px) {
+  .contact {
+    flex-direction: column;
+  }
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact-media {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .contact-title {
+    left: -5%;
+    top: -40px;
+  }
+}
 /* footer */
 #footer {
   background-color: var(--dark);
@@ -332,7 +400,7 @@ h3 {
 }
 .footer {
   color: #fff;
-  padding: 30px 0;
+  padding: 15px 0;
   text-align: center;
   margin-bottom: 0;
 }
