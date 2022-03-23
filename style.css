@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --dark: #2f3640;
+  --secondary: rgb(232, 65, 24);
+  --yellow: #fbc531;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.mb-section {
+  margin-bottom: 50px;
+}
+body {
+  width: 100%;
+  color: var(--dark);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 70px;
+  margin-bottom: 30px;
+}
+button {
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+}
+/* navbar */
+#navbar {
+  position: sticky;
+  top: 0;
+  left: 5%;
+  background-color: var(--dark);
+  z-index: 10;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10px 10px;
+  color: #fff;
+}
+.navbar {
+  padding: 10px 0;
+  height: auto;
+}
+.navbar-list ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+.menu-bar {
+  display: none;
+  cursor: pointer;
+}
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 675px) {
+  .menu-bar {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .navbar-list {
+    display: none;
+  }
+  .navbar-list ul {
+    display: block;
+    padding-left: 1.6rem;
+  }
+}
+/* header */
+#home {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home {
+  padding-top: 0;
+}
+.home-row1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.header-profile img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: rgb(251, 197, 49);
+  background: radial-gradient(circle, rgba(251, 197, 49, 0.7455357142857143) 50%, rgba(255, 255, 255, 1) 100%, rgba(0, 255, 235, 1) 100%);
+  display: block;
+}
+.header-name {
+  font-size: 1.5rem;
+}
+.header-frontend {
+  font-size: 2rem;
+}
+/* header button */
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link-btn {
+  background-color: var(--secondary);
+  color: #fff;
+  margin: 20px 0;
+  padding: 0.5rem 0;
+  width: 150px;
+  margin: 10px 0;
+  display: block;
+  border-radius: 5px;
+  text-align: center;
+}
+.telegram-message {
+  background-color: #0088cc;
+}
+.link-btn:hover {
+  background-color: var(--yellow);
+  color: var(--dark);
+}
+.link-btn i {
+  margin-right: 8px;
+}
+.curriculum-vitae {
+  color: var(--dark);
+}
+.curriculum-vitae i {
+  margin-left: 10px;
+}
+/* about me */
+.home-row2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.home-row2 > div {
+  border-left: 4px solid var(--dark);
+  padding-left: 10px;
+}
+.about-me-description {
+  width: 60%;
+}
+.about-me-tech {
+  width: 40%;
+}
+.about-me-tech > div ul {
+  margin-left: 30px;
+  display: flex;
+  gap: 30px;
+}
+.title {
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-size: 7rem;
+  position: absolute;
+  z-index: -1;
+}
+.profile-title {
+  z-index: -1;
+}
+/* projects */
+.project-title {
+  right: 0;
+  top: 0px;
+  transform: rotate(90deg) translate(30%, -110%);
+}
+.project-card {
+  width: 80%;
+  margin: 0 auto 30px;
+  height: 400px;
+  position: relative;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
+  filter: grayscale(100%);
+  cursor: pointer;
+  border-left: 4px solid var(--dark);
+  background-size: cover;
+}
+.weather-app {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.7)), url(./img/weather-app.png) no-repeat;
+  background-size: cover;
+}
+.landing-page-1 {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.7)), url(./img/landing-page-1.png) no-repeat;
+  background-size: cover;
+}
+.to-do-app {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.7)), url(./img/todo.png) no-repeat;
+  background-size: cover;
+}
+.project-card:hover {
+  filter: none;
+}
+.card-title h2 {
+  display: inline;
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+  background-color: var(--yellow);
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.project-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.live-btn,
+.repo-btn {
+  border: 2px solid #fff;
+}
+.live-btn {
+  background-color: #3dbdb8;
+}
+.repo-btn {
+  background-color: #800080;
+}
+.frontend-mentor-btn {
+  width: 80%;
+  margin: 0 auto;
+}
+/* contact */
+.contact-title {
+  right: 0;
+  top: 0;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-group {
+  width: 50%;
+}
+.form-group form {
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+  border: 1px solid var(--dark);
+}
+.form-group form > * {
+  border-radius: 5px;
+  border: 1px solid var(--dark);
+  padding: 5px;
+  padding: 5px 10px;
+}
+.form-group form h3 {
+  border: none;
+}
+.contact-media {
+  width: 50%;
+  font-size: 4rem;
+}
+.contact-media {
+  text-align: center;
+}
+.contact-media i {
+  padding: 10px;
+}
+.contact-media i:hover {
+  transform: translateY(-5px);
+}
+.fa-twitter,
+.fa-linkedin,
+.fa-instagram,
+.telegram-logo {
+  color: var(--dark);
+}
+.fa-twitter:hover {
+  color: rgb(29, 161, 242);
+}
+.fa-linkedin:hover {
+  color: rgb(14, 118, 168);
+}
+.fa-instagram:hover {
+  color: rgb(188, 42, 141);
+}
+.fa-github:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+}
+.telegram-logo:hover {
+  color: #0088cc;
+}
+.contact-btn {
+  background-color: var(--dark);
+  color: #fff;
+}
+.contact-btn:hover {
+  background-color: var(--yellow);
+  color: var(--dark);
+}
+/* footer */
+#footer {
+  background-color: var(--dark);
+  border-radius: 20px 20px 0 0;
+}
+.footer {
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  margin-bottom: 0;
+}
