@@ -17,6 +17,7 @@
 body {
   width: 100%;
   color: var(--dark);
+  overflow-x: hidden;
 }
 ul {
   list-style: none;
